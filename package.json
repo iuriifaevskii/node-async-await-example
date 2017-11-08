@@ -1,0 +1,22 @@
+{
+  "name": "async-await-example",
+  "version": "1.0.0",
+  "description": "### Pre-requirements - npm - node version v8",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuriifaevskii/node-async-await-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iuriifaevskii/node-async-await-example/issues"
+  },
+  "homepage": "https://github.com/iuriifaevskii/node-async-await-example#readme",
+  "dependencies": {
+    "axios": "^0.17.0"
+  }
+}

@@ -20,3 +20,4 @@ getTestFirst()
 getTestSecond()
     .then(name => console.log(name))
     .catch(e => console.log(e));
+    
