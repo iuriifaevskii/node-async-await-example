@@ -64,9 +64,24 @@ getStatus(1).then((status) => {
 
 
 //async/await
+
+const getUserAlt = async (id) => {
+    const user = await users.find((user) => user.id === id);
+        
+    if (user) {
+        return user;
+    } else {
+        throw new Error(`Unable to find user with id of ${id}`);
+    }
+};
+
+const getGradesAlt = async (schoolId) => {
+    return await grades.filter((grade) => grade.schoolId === schoolId);
+};
+
 getStatusAlt = async (userId) => {
-    const user = await getUser(userId);
-    const grades = await getGrades(user.schoolId);
+    const user = await getUserAlt(userId);
+    const grades = await getGradesAlt(user.schoolId);
 
     let average = 0;
     if (grades.length > 0) {
