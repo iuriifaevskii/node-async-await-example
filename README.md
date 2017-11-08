@@ -2,4 +2,4 @@
 
 ### Pre-requirements
 - npm
-- node version v6.11.4
+- node version v8
